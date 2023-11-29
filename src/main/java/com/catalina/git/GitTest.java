@@ -10,6 +10,7 @@ public class GitTest {
     public static void main(String[] args) {
         System.out.println("modified by hot fix branch V4");
         System.out.println("modified by hot fix branch V2");
+        System.out.println("push test master V5");
         // bubble sort
         int[] arr = {89, 56, 78, 15, 99, 45, 25};
         System.out.println("排序前的数组为："+Arrays.toString(arr));
