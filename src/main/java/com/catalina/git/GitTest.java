@@ -11,6 +11,7 @@ public class GitTest {
         System.out.println("modified by hot fix branch V4");
         System.out.println("modified by hot fix branch V2");
         System.out.println("push test master V5");
+        System.out.println("pull test master V6");
         // bubble sort
         int[] arr = {89, 56, 78, 15, 99, 45, 25};
         System.out.println("排序前的数组为："+Arrays.toString(arr));
