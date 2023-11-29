@@ -28,7 +28,7 @@ public class GitTest {
             }
         }
         System.out.println("升序排序后的数组为："+Arrays.toString(arr));
-        insertSort(arr);
+        shellSort(arr);
         System.out.println("降序排序后的数组为："+Arrays.toString(arr));
     }
 
@@ -45,6 +45,24 @@ public class GitTest {
                 insertIndex --;
             }
             arr[insertIndex+1] = insertValue;
+        }
+    }
+
+    /**
+     * 希尔排序
+     * @param arr：未排序的数组
+     */
+    public static void shellSort(int[] arr){
+        for (int gap = arr.length/2; gap > 0;gap/=2){
+            for (int i = gap; i < arr.length; i++){
+                int insertIndex = i - gap;
+                int insertValue = arr[i];
+                while(insertIndex >= 0 && insertValue<arr[insertIndex]){
+                    arr[insertIndex+gap] = arr[insertIndex];
+                    insertIndex -= gap;
+                }
+                arr[insertIndex+gap] = insertValue;
+            }
         }
     }
 }
